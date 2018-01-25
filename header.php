@@ -9,7 +9,7 @@
 <!doctype html>
 <html class="no-js"  <?php language_attributes(); ?>>
    <head>
-      <meta charset="utf-8"> 
+      <meta charset="utf-8">
       <!-- Force IE to use the latest rendering engine available -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- Mobile Meta -->
