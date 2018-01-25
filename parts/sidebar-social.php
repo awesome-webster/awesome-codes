@@ -1,5 +1,3 @@
-
-
 <section class="social-icons-sidebar sidebar-blog fullwidth section-padding-sidebar">
    <h3><?php the_field('lets_connect_heading', 151); ?></h3>
    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sidebar-dots.png" class="sidebar-dots"/>

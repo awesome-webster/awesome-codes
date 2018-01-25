@@ -9,7 +9,7 @@
 <!doctype html>
 <html class="no-js"  <?php language_attributes(); ?>>
    <head>
-      <meta charset="utf-8">
+      <meta charset="utf-8"> 
       <!-- Force IE to use the latest rendering engine available -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- Mobile Meta -->
@@ -23,23 +23,10 @@
       <?php } ?>
       <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
       <?php wp_head(); ?>
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
       <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/scripts.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.offcanvas.js"></script>
-
-      <script type="text/javascript"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33564864-1"></script>
-      <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-
-       gtag('config', 'UA-33564864-1');
-      </script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    </head>
-
    <body <?php body_class(); ?>>
       <div class="off-canvas-wrapper">
       <!-- Load off-canvas container. Feel free to remove if not using. -->

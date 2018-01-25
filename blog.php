@@ -14,7 +14,6 @@
       <?php get_template_part( 'parts/sidebar', 'popular' ); ?>
       <?php get_template_part( 'parts/sidebar', 'social' ); ?>
       <?php get_sidebar(); ?>
-
    </div>
 </div>
 <div id="content"></div>

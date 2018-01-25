@@ -1,30 +1,3 @@
-<div class="owl-carousel owl-theme">
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-  <div> Your Content </div>
-</div>
-
-<div class="carousel-wrap">
-  <div class="owl-carousel">
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-    <div class="item"><img src="http://placehold.it/150x150"></div>
-  </div>
-</div>
-
 <section class="testimonials section-padding-global">
    <ul class="orbit-container testimonials-home" data-orbit>
       <button class="orbit-previous">

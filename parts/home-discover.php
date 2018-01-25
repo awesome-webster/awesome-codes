@@ -7,12 +7,12 @@
       <p class="discover-site-three-up-desc"><?php the_field('maketing_text'); ?></p>
     </div>
     <div class="columns  medium-4 small-12">
-       <img src="<?php the_field('finances_icon'); ?>" alt="finance">
+      <img src="<?php the_field('finances_icon'); ?>" alt="finance">
       <h4 class="discover-site-three-up-title"><?php the_field('finances'); ?></h4>
       <p class="discover-site-three-up-desc"><?php the_field('finances_text'); ?></p>
     </div>
     <div class="columns  medium-4 small-12">
-       <img src="<?php the_field('strategy_icon'); ?>" alt="strategy">
+      <img src="<?php the_field('strategy_icon'); ?>" alt="strategy">
       <h4 class="discover-site-three-up-title"><?php the_field('strategy'); ?></h4>
       <p class="discover-site-three-up-desc"><?php the_field('strategy_text'); ?></p>
     </div>
