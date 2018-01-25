@@ -1,0 +1,43 @@
+/******************************************************************
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants.
+
+******************************************************************/
+
+/*********************
+TOOLS
+*********************/
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+/*********************
+COLORS
+*********************/
+
+/*francisco Colors */
+$color--turquoise: #30c7c9;
+$color--turquoise-border: #5BB0B1;
+$color-ultra-light: #b7b9bc;
+$color--light: #6fcbd0;
+$color--medium-light: #4ba0b6;
+$color--medium:#277e9e;
+$color--dark: #00446e;
+$gray: #212121;
+$black: #000000;
+$gray-light: #F8F8F8;
+$gray-medium-light: #dddddd;
+$gray-border: #dddbdb;
+$gray-light-shadow:#ddd;
+$gray-author: #747474;
+$gray-popular-post: #4b4e4e;
+$gray-font: #666666;
+$white: #fefefe;

@@ -1,0 +1,17 @@
+/*======= Terms =============*/
+
+.terms-and-conditions {
+  background: linear-gradient(180deg, #000 4rem, #fff 0);
+
+  h2 {
+    margin-top: 5rem;
+  }
+}
+@include breakpoint (small only) {
+  .page-id-138 {
+    .section-padding-global {
+      padding-top: 7rem;
+      padding-bottom: 2rem;
+    }
+  }
+}

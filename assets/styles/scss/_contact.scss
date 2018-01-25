@@ -1,0 +1,139 @@
+/*=======contact=============*/
+
+.contact-hero {
+  h1 {
+    @include breakpoint (medium) {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.contact-hero {
+  h1 {
+    span {
+      margin-top: -1.4rem;
+      color: $color--turquoise;
+      font-size: 5rem;
+      display: block;
+      float: left;
+      margin-right: 1rem;
+      font-family: $font--crimson;
+      @include breakpoint (small only) {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contact-hero {
+  .subheader {
+    float: left;
+  }
+}
+/*=======  get in touch  =============*/
+@include breakpoint (medium) {
+  .get-in-touch_container {
+    min-height: 44rem;
+  }
+}
+
+.blackbg {
+  background: $black;
+}
+
+.turquoisebg {
+  background: $color--turquoise;
+
+  h4 {
+    margin-bottom: 1.1rem;
+  }
+}
+
+.get-in-touch_container {
+  @include breakpoint(medium) {
+    padding: 5rem 5rem 0;
+  }
+  padding: 2rem;
+
+  h4,
+  p {
+    color: $white;
+  }
+
+  a {
+    color: $gray-medium-light;
+  }
+}
+
+.get-in-touch {
+  background: url("../images/contact-form-bg.jpg") 0 50% repeat-x;
+}
+
+.get-in-touch {
+  .get-in-touch_container {
+    .wpcf7-submit {
+      background: $black;
+      border: 0;
+      color: $white;
+      padding: 1rem 3rem;
+      text-transform: uppercase;
+      font-family: $font--mont;
+      font-size: 0.8em;
+      float: right;
+      margin-top: -4.1rem;
+      z-index: 1;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}
+/*======= services  =============*/
+
+.three-col-infobox {
+  background: $gray-light;
+}
+
+.three-col-infobox_container {
+  img {
+    width: 100%;
+  }
+  @include breakpoint (small only) {
+    margin-top: 2rem;
+  }
+  background: $white;
+  box-shadow: 2px 2px 8px 0 $gray-medium-light;
+  float: left;
+
+  .detail {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .subheading {
+    font-family: $font--mont;
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    margin-right: 1rem;
+    float: right;
+    margin-top: 4rem;
+  }
+}
+
+.bg-turquoise {
+  background: $color--turquoise;
+}

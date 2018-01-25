@@ -1,0 +1,208 @@
+/*=====footer================================*/
+.footer {
+  background: $black;
+  margin-top: 0;
+
+  h4 {
+    color: #fff;
+  }
+}
+
+.inner-footer {
+  @include breakpoint (small only) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.socket {
+  @include breakpoint (small only) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;  
+  }
+}
+
+.explore {
+  padding-top: 3.5rem;
+
+  a {
+    color: $dark-gray;
+    clear: both;
+    display: block;
+    border-bottom: 1px solid $dark-gray;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 10rem;
+  }
+}
+
+.about-francisco-box {
+  background: $white;
+  padding: 8% 2% 0;
+  text-align: center;
+  margin-top: 7rem;
+  margin-right: 7rem;
+  @include breakpoint (medium only) {
+    margin-right: 0;
+  }
+  @include breakpoint (small only) {
+    margin-right: 0;
+  }
+
+  .francisco-comment {
+    position: relative;
+    top: 16px;
+  }
+
+  a {
+    margin-top: 5%;
+    display: block;
+  }
+}
+
+.about-francisco {
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+
+  .francisco-circle {
+    border-radius: 96px;
+    border: 5px solid #fefefe;
+    width: 8em;
+    margin: -9rem auto 0;
+    display: block;
+  }
+}
+@include breakpoint (medium) {
+  .join {
+    float: right;
+
+    span {
+      margin-right: 0.8rem;
+      float: left;
+    }
+  }
+}
+@include breakpoint (medium only) {
+  .join {
+    float: left;
+    margin-top: 2rem;
+  }
+}
+@include breakpoint (small only) {
+  .privacy-policy {
+    clear: both;
+  }
+
+  .join {
+    a {
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.stay-connected {
+  padding-top: 3.5rem;
+}
+
+.social-icons {
+  li {
+    float: left;
+    list-style: none;
+    margin-right: 6%;
+  }
+
+  ul {
+    margin-bottom: 1em;
+    margin-left: 0;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  a {
+    &:hover {
+      color: $color--turquoise;
+    }
+  }
+}
+
+.socket {
+  background: $gray;
+  float: left;
+  color: $dark-gray;
+  @include breakpoint (medium) {
+    padding-top: 1.5rem;
+
+    .privacy-policy {
+      span {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .terms {
+      color: $dark-gray;
+      float: right;
+    }
+  }
+
+  .privacy {
+    color: $dark-gray;
+    float: left;
+  }
+
+  .button {
+    color: $white;
+    margin-top: -5px;
+  }
+
+  img {
+    float: left;
+    margin-right: 2rem;
+  }
+
+  .copyright {
+    float: left;
+    margin-right: 2rem;
+  }
+
+  .privacy-policy {
+    float: left;
+    margin-right: 2rem;
+  }
+}
+
+.email-footer {
+  color: $white;
+  margin-top: 1em;
+  display: block;
+}
+@include breakpoint (small only) {
+  .terms {
+    color: $dark-gray;
+    float: left;
+  }
+
+  .copyright {
+    margin-bottom: 2rem;
+  }
+
+  .join {
+    span {
+      float: left;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .privacy-policy {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    span {
+      display: none;
+    }
+  }
+}

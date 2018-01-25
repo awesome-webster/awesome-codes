@@ -1,0 +1,33 @@
+/*======= Thank You =============*/
+.black-button {
+  background: $black;
+}
+
+.thankyou-hero {
+  @include breakpoint (medium) {
+    .black-button {
+      margin-left: 1rem;
+    }
+  }
+  @include breakpoint (small only) {
+    .button {
+      min-width: 100%;
+      display: block;
+    }
+  }
+}
+
+.subscription-box {
+  @include breakpoint (medium) {
+    background: url("../../assets/images/value-plan.png") 0 27px no-repeat;
+
+    h2 {
+      width: 50rem;
+      margin: 0 auto;
+    }
+  }
+
+  .subscription-box_container {
+    text-align: center;
+  }
+}

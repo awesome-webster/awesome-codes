@@ -1,0 +1,15 @@
+/******************************************************************
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants.
+
+******************************************************************/
+/*********************
+TYPOGRAPHY
+*********************/
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text';
+$font--crimson: 'Crimson Text', serif;
+$font--mont: 'Montserrat', sans-serif;

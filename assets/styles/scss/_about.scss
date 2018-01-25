@@ -1,0 +1,95 @@
+/*=======about=============*/
+
+.about-hero {
+  .hero-image_container {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    @include breakpoint (large) {
+      background-position: right center;
+    }
+
+    .hero-content {
+      h1,
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+/*=======Quick Shot=============*/
+.quick-shot-element {
+  background: url("../images/quick-shot-element.png") no-repeat;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+.quick-shot-francisco {
+  img {
+    float: right;
+    border: 3px solid $gray-light-shadow;
+    box-shadow: 2px 2px 2px $gray-light-shadow;
+  }
+}
+/*=======accomplishment=============*/
+
+.accomplishment {
+  background: $gray-light;
+}
+
+.accomplishment-intro,
+.quick-shot_container,
+.really-love_container {
+  h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.accomplishment-intro {
+  margin-top: 2rem;
+}
+@include breakpoint (medium) {
+  .accomplishment-intro {
+    background: $white;
+    padding: 5rem;
+    box-shadow: 1px 1px 5px $gray-light-shadow;
+    position: relative;
+    z-index: 1;
+    left: -5rem;
+  }
+
+  .accomplishment-francisco-img {
+    position: relative;
+    left: 70px;
+    z-index: 0;
+  }
+}
+/*=======what i really love=============*/
+
+.really-love {
+  background-size: cover;
+}
+
+.really-love-intro {
+  p {
+    color: $white;
+  }
+  z-index: 1;
+  position: relative;
+  background: $color--turquoise;
+  padding: 3rem;
+}
+
+.really-love-white {
+  border: 5px solid $white;
+  width: 100%;
+  height: 100%;
+  left: 1rem;
+  position: absolute;
+  z-index: 0;
+  top: -1rem;
+}
+
+.really-love_container {
+  position: relative;
+}

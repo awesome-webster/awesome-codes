@@ -1,0 +1,23 @@
+/*======= Privacy =============*/
+.privacy-page {
+  background: linear-gradient(180deg,#000 4rem,#fff 0);
+
+  h2,
+  h4 {
+    margin-top: 5rem;
+  }
+
+  .disclamer {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+  }
+}
+@include breakpoint (small only) {
+  .page-id-144 {
+    .section-padding-global {
+      padding-top: 7rem;
+      padding-bottom: 2rem;
+    }
+  }
+}

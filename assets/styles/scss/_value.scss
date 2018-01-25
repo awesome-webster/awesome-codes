@@ -1,0 +1,54 @@
+/*======= value =============*/
+
+.legend {
+  background: url("../../assets/images/legend-bg.png") left top no-repeat;
+  padding-top: 0.4rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  width: 17rem;
+}
+
+.value-products {
+  background: $white;
+
+  .columns {
+    margin-bottom: 1.8rem;
+  }
+
+  .three-col-infobox_container {
+    box-shadow: 0 2px 8px 0 $gray-light-shadow;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    @include breakpoint (medium) {
+      margin-bottom: 7rem;
+    }
+  }
+}
+@include breakpoint (medium) {
+  .value_container {
+    background: url("../../assets/images/value-plan.png") 750px 27px no-repeat;
+    width: 76rem;
+    margin: 0 auto;
+  }
+}
+/*======= value services =============*/
+
+.value-services {
+  background: $gray-light;
+
+  .three-col-infobox_container {
+    box-shadow: 0 2px 8px 0 $gray-light-shadow;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    @include breakpoint (medium) {
+      margin-bottom: 7rem;
+    }
+  }
+}

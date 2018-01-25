@@ -1,0 +1,265 @@
+/*=======blog=============*/
+
+.blog-dots {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.blog-posts {
+  h2 {
+    a {
+      color: $black;
+      font-weight: bold;
+    }
+  }
+
+  .byline {
+    font-family: $font--mont;
+    font-size: 0.7em;
+  }
+}
+
+.excerpt-read-more {
+  color: $black;
+
+  &:hover {
+    color: $color--turquoise;
+  }
+}
+
+.post-excerpt {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 90%;
+  font-size:1.3em;
+
+  p {
+    font-family: $font--crimson;
+    font-size: 1.1em;
+  }
+}
+
+.numbered-pagination {
+  .current {
+    background: $color--turquoise;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    height: 1.5rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-right: 0.4rem;
+    padding-bottom: 1.8rem;
+    margin-left: 0.4rem;
+    color: $white;
+  }
+
+  a {
+    color: $black;
+    font-family: $font--crimson;
+  }
+}
+/*=======blog sidebar=============*/
+.newsletter-inner_container {
+  border-top: 3px solid $color--turquoise;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+}
+
+.newsletter-small {
+  .newsletter-button {
+    width: 100%;
+  }
+}
+
+.newsletter-small .name-newsletter {
+  margin-right: 1rem;
+}
+@include breakpoint (large xlarge) {
+  .newsletter-small {
+    .name-newsletter {
+      width: 9.8rem;
+      float: left;
+    }
+
+    .email-address-newsletter {
+      width: 9.8rem;
+      float: left;
+    }
+  }
+}
+
+.newsletter-small {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.newsletter-small_container {
+  border: 3px solid $black;
+  padding: 2rem;
+  text-align: center;
+}
+
+.social-icons-sidebar {
+  background: $gray-light;
+
+  .social-icons_container {
+    text-align: center;
+    background: $black;
+    color: $white;
+    padding: 2rem;
+    font-family: $font--mont;
+    float: left;
+
+    a {
+      display: block;
+      color: $white;
+    }
+  }
+
+  .columns:nth-child(1) {
+    margin-bottom: 2rem;
+  }
+}
+
+.sidebar-blog {
+  margin-bottom: 3rem;
+
+  h3 {
+    @include breakpoint(small only) {
+      border-bottom: 3px solid $black;
+      padding-bottom: 0.8rem;
+    }
+    @include breakpoint(medium large) {
+      border-bottom: 3px solid $black;
+      padding-bottom: 0.8rem;
+    }
+  }
+
+  .sidebar-dots {
+    margin-top: -3.6rem;
+    margin-left: 1rem;
+    @include breakpoint (small only) {
+      width: auto;
+    }
+  }
+}
+@include breakpoint (small only) {
+  .popular-posts {
+    .sidebar-dots {
+      margin-top: -2.6rem;
+    }
+  }
+}
+
+.sidebar {
+  margin-bottom: 3rem;
+  max-width: 100%;
+
+  .alert {
+    display: none;
+  }
+}
+/*======= popular posts =============*/
+.popular-posts {
+  @include breakpoint (small only) {
+    img {
+      margin-top: 0.5rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  img {
+    margin-top: 0.5rem;
+  }
+
+  a {
+    font-size: 0.9em;
+    color: $gray;
+    display: block;
+    line-height: 1.4rem;
+    font-family: $font--mont;
+  }
+
+  .post-excerpt {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 0.9em;
+    display: block;
+    float: left;
+    width: 100%;
+    color: $gray-popular-post;
+    line-height: 1.4rem;
+  }
+
+  .popular-readmore {
+    float: right;
+    color: $gray-popular-post;
+  }
+
+  .post-time {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    float: left;
+    font-family: $font--mont;
+    color: $gray-author;
+  }
+}
+
+.newsletter-small {
+  padding-bottom: 2rem;
+}
+
+.post-info {
+  margin-top: 0.5rem;
+  float: left;
+}
+
+.author-name {
+  span {
+    float: left;
+    display: block;
+    color: $gray-author;
+  }
+  font-size: 0.6em;
+  text-transform: uppercase;
+  float: left;
+  font-family: $font--mont;
+  color: $gray-author;
+
+  a {
+    font-size: 1em;
+    text-transform: uppercase;
+    float: right;
+    font-family: Montserrat,sans-serif;
+    margin-top: -.30rem;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    color: $gray-author;
+    line-height: 1.7rem;
+  }
+}
+/*======= single page blog post =============*/
+@include breakpoint (small only) {
+  .single-post {
+    .section-padding-global {
+      padding-top: 7rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.single-post {
+  .off-canvas-wrapper {
+    background: linear-gradient(180deg, #000 3%, #fff .7%);
+    @include breakpoint (small only) {
+      background: linear-gradient(180deg,#000 2%,#fff 0);
+    }
+  }
+
+  h1 {
+    line-height: 3.5rem;
+  }
+}

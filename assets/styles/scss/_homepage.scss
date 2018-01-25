@@ -1,0 +1,475 @@
+/*=======GENERAL CLASSES=============*/
+
+body {
+  font-size: 1.2em;
+}
+
+.inner-width {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.fullwidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
+.h2-heading {
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-padding-sidebar {
+  padding: 2rem;
+}
+@include breakpoint (medium large) {
+  .section-padding-global {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+
+    section {
+      width: 75rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .no-col-spacing {
+    padding: 0;
+  }
+}
+@include breakpoint (small only) {
+  .section-padding-global {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+.no-row-margin {
+  margin: 0;
+}
+/*=====HOME PAGE================================*/
+$homepage-site-hero-height: 80vh;
+$homepage-site-hero-largescreen-height: 70vh;
+
+.hero-image_container {
+  background-size: cover;
+  align-items: center;
+  background-repeat: no-repeat;
+  @include breakpoint (medium) {
+    background-position: center center;
+    background-size: cover;
+    min-height: $homepage-site-hero-height;
+  }
+  @include breakpoint (xxlarge) {
+    min-height: $homepage-site-hero-largescreen-height;
+  }
+}
+@include breakpoint (small medium) {
+  .social-icons-header {
+    display: none;
+  }
+}
+@include breakpoint (large xlarge) {
+  .social-icons-header {
+    display: block;
+  }
+}
+
+p.subheader {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.hero-content {
+  max-width: $global-width;
+  margin: 0 auto;
+  padding: 30% 0;
+
+  h1 {
+    font-size: 3em;
+    font-family: $font--mont;
+    font-weight: 700;
+  }
+
+  h1,
+  p {
+    color: $white;
+  }
+
+  .button.round {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+}
+/*=====discover================================*/
+
+.discover-site-three-up {
+  text-align: center;
+  padding: 2% 0 0;
+
+  .columns {
+    text-align: center;
+    border-left: 1px solid #ccc;
+    @include breakpoint (medium) {
+      padding-top: 6.5rem;
+      padding-bottom: 6.5rem;
+      margin-bottom: 0;
+    }
+    @include breakpoint (small only) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .fa {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+}
+
+.discover-site-three-up-headline {
+  margin: 2em auto 3em;
+  font-family: $font--mont;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.discover-site-three-up-desc {
+  text-align: center;
+}
+
+.discover-site-three-up-title {
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  color: $black;
+  font-family: $font--mont;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.discover-site-three-up {
+  @include breakpoint (medium) {
+    background: url("../images/dot.jpg") 0 33% repeat-x;
+
+    .row {
+      margin: 0 auto;
+    }
+  }
+}
+/*=====Stop working for someone else================================*/
+
+.newsletter-cta {
+  background: $black;
+  padding: 1.5rem 0 1rem;
+
+  h2 {
+    color: $white;
+  }
+
+  .send {
+    background-color: $white;
+    color: $black;
+  }
+}
+/*=====Blog================================*/
+
+.blog-post-wrap > a > h2 {
+  font-size: 1.2rem;
+  color: $black;
+}
+
+.blog-post-wrap > a > p {
+  color: $black;
+}
+
+.blog-post-wrap {
+  @include breakpoint (small only) {
+    clear: both;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      float: left;
+      font-size: 1.4em;
+      padding-left: 0.4rem;
+    }
+
+    p {
+      padding-bottom: 0.6rem;
+      padding-left: 0.4rem;
+    }
+  }
+  border: 1px solid $gray-border;
+  padding: 2px;
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  transition: box-shadow 0.1s ease-in;
+
+  &:hover {
+    box-shadow: 5px 5px 5px rgba(51,51,51,0.15);
+  }
+
+  h2 {
+    @include breakpoint (medium) {
+      float: right;
+      width: 19rem;
+    }
+    margin-top: 0.4rem;
+
+    a {
+      color: $black;
+      font-size: 0.6em;
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+  img {
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .post-excerpt_home {
+    width: 100%;
+
+    .excerpt-read-more {
+      display: none;
+    }
+
+    p {
+      float: left;
+      display: block;
+      font-size: 1em !important;
+      margin-bottom: -.1rem;
+      line-height: 1.5rem;
+      @include breakpoint (medium) {
+        width: 18rem;
+      }
+    }
+
+    a {
+      font-size: 1em;
+      color: $black !important;
+    }
+  }
+}
+
+.blog-home {
+  @include breakpoint (medium) {
+    background: url("../images/whats-up-heading-bg.jpg") center 9% no-repeat;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .inner-col-blog {
+    border: 1px solid #ccc;
+    float: left;
+    margin-bottom: 5%;
+    @include breakpoint (medium) {
+      .blog-text {
+        float: right;
+        width: 51%;
+        text-align: left;
+        padding-right: 2%;
+      }
+
+      img {
+        float: left;
+      }
+    }
+  }
+
+  .first {
+    margin-top: 8%;
+  }
+}
+
+.second-blog-row {
+  margin-top: 1%;
+}
+@include breakpoint (medium large) {
+  .inner-col-blog {
+    padding: 0;
+  }
+
+  .first-blog-row {
+    margin-top: 7%;
+  }
+}
+@include breakpoint (small only) {
+  .inner-col-blog {
+    text-align: center;
+
+    .first-blog-row {
+      margin-top: 0;
+    }
+
+    p {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+  }
+}
+/**************************************/
+/* testimonials */
+/**************************************/
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+@include breakpoint (small only) {
+  .testimonials {
+    padding-top: 8rem;
+
+    .testimonials-container_inner {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .orbit-next,
+  .orbit-previous {
+    top: -5rem;
+  }
+}
+
+.orbit-container {
+  position: relative;
+  height: auto;
+  overflow: visible;
+}
+@include breakpoint (medium) {
+  .orbit-next,
+  .orbit-previous {
+    top: -5rem;
+  }
+
+  .testimonials .testimonials-container_inner {
+    margin-bottom: 5rem;
+  }
+}
+@include breakpoint (xlarge) {
+  .orbit-next,
+  .orbit-previous {
+    top: 50%;
+  }
+}
+
+.orbit-slide {
+  list-style: none !important;
+}
+
+.testimonials {
+  background-color: $gray-light;
+  position: relative;
+
+  .testimonials-container_inner {
+    box-shadow: 0 1px 1px 2px #ddd;
+    padding: 1rem;
+  }
+
+  p.description {
+    text-align: left;
+  }
+
+  .testimonials-container_inner {
+    img {
+      margin: 0 auto;
+      display: block;
+      margin-top: -4rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+nav.orbit-bullets {
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  z-index: 20;
+}
+
+.orbit-next:active,
+.orbit-next:focus,
+.orbit-next:hover,
+.orbit-previous:active,
+.orbit-previous:focus,
+.orbit-previous:hover {
+  cursor: pointer;
+  background: none;
+}
+
+nav.orbit-bullets {
+  button {
+    p {
+      position: absolute;
+      top: 20%;
+      left: 40%;
+    }
+  }
+}
+
+/* mobile menu  */
+
+.francisco-mobile {
+  @include breakpoint (medium large) {
+    display: none;
+  }
+
+  ul {
+    background: transparent;
+    float: right;
+    margin-top: -2.2rem;
+    z-index: 10;
+  }
+}
+
+.off-canvas a {
+  color: $black;
+}

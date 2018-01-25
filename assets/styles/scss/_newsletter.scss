@@ -1,0 +1,164 @@
+/*======= Newsletter =============*/
+
+.newsletter-close {
+  left: 2rem;
+  top: 1rem;
+  color: $white;
+}
+
+.newsletter_container {
+  border-bottom: 3px solid $color--turquoise;
+  background-size: cover;
+  background: url("../../assets/images/Pop-Up-Email.jpg") no-repeat;
+  height: 25rem;
+  margin: 0 auto;
+  background-size: cover;
+
+  h2 {
+    margin-top: 7rem;
+    color: $white;
+  }
+
+  p {
+    color: $white;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.page-template-newsletter {
+  .site-header {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+.newsletter-fields {
+  background: $white;
+
+  h2 {
+    font-size: 1em;
+    margin-top: 2rem;
+  }
+}
+
+.newsletter-fields {
+  .name-newsletter {
+    float: left;
+    width: 33rem;
+    margin-right: 1rem;
+  }
+}
+
+.newsletter-fields {
+  .email-address-newsletter {
+    float: left;
+    width: 34rem;
+    margin-right: 0;
+  }
+
+  h2 {
+    margin-left: 1rem;
+  }
+}
+
+.newsletter-fields .button {
+  width: 100%;
+}
+@include breakpoint (medium) {
+  .newsletter-fields_container {
+    margin: 0 auto;
+    display: block;
+    width: 70rem;
+  }
+}
+
+.privacy-statement {
+  text-align: center;
+  font-size: 0.7em;
+  color: $gray;
+}
+/*======= Newsletter 2 =============*/
+.newsletter-2 {
+  .download-startup {
+    h2 {
+      padding-top: 2rem;
+    }
+  }
+
+  .newsletter_container-inner {
+    background: $color--turquoise;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .newsletter_container {
+    background: url("../../assets/images/newsletter-2.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  h2 {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+
+}
+.revolution {
+  margin-top: 2rem;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 18rem solid transparent;
+  border-right: 17.5rem solid transparent;
+  border-top: 50px solid $color--turquoise;
+}
+/*======= Newsletter 3 =============*/
+.newsletter-3 {
+  input {
+    width: 100%;
+  }
+
+  h2 {
+    color: $gray;
+  }
+
+  p {
+    color: $gray-font;
+    font-size: 1em;
+  }
+
+  .newsletter_container {
+    border: none;
+    background: url("../../assets/images/plan.png") 0 24rem no-repeat;
+    height: 25rem;
+    @include breakpoint (medium) {
+      width: 39rem;
+    }
+  }
+
+  .newsletter-button {
+    padding-left: 4rem;
+  }
+}
+
+#cboxClose {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+/* Editions to the reveal */
+.reveal {
+  padding: 0 0 1%;
+  border: none;
+}
